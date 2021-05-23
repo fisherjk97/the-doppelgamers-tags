@@ -9,24 +9,24 @@
         "Id": "02",
         "Name": "Donkey Kong",
         "Message": "",
-        "HashTags": ""
+        "HashTags": []
     },
     {
         "Id": "03",
         "Name": "Link",
         "Message": "",
-        "HashTags": ""
+        "HashTags": []
     },
     {
         "Id": "04",
         "Name": "Samus",
         "Message": "",
-        "HashTags": ""
+        "HashTags": []
     },
     {
         "Id": "04e",
         "Name": "Dark Samus",
         "Message": "",
-        "HashTags": ""
+        "HashTags": []
     }
 ]

@@ -27,20 +27,23 @@ def generate_hash_tags(data):
         content += "Day " + str(day_num) + " of photographing every #SmashBros character."
         content += " " + d["Message"]
         day_num = day_num + 1
-        content += "\n"
-        
-        content += add_hashtags(constant_hash_tags)
-        content += add_hashtags(constant_mentions)
-        if "HashTags" in d:
-            content += add_hashtags(d["HashTags"])
 
+        if "HashTags" not in d:
+            d["HashTags"] = []
+
+        d["HashTags"].extend(constant_hash_tags)
+        d["HashTags"].extend(constant_mentions)
+
+        content += "\n"
+        content += print_hashtags(d["HashTags"])
+        content += "\n"
         content += "\n"
         print(content)
 
     return content
 
 
-def add_hashtags(hashtags):
+def print_hashtags(hashtags):
     content = ""
     count = 0
     if(hashtags):
@@ -50,7 +53,6 @@ def add_hashtags(hashtags):
             else:
                 content += " " + h
             count += 1
-        content += "\n"
     return content
 
 def main():
