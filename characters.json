@@ -3,30 +3,35 @@
         "Id": "01",
         "Name": "Mario",
         "Message": "Let's start the countdown with everyone's favorite Italian plumber, #Mario!",
-        "HashTags": ["#supermario", "supermariobros", "mushroomkingdom"]
+        "HashTags": ["#supermario", "#supermariobros", "#mushroomkingdom"],
+        "Mentions": []
     },
     {
         "Id": "02",
         "Name": "Donkey Kong",
-        "Message": "",
-        "HashTags": []
+        "Message": "The one and only, #Donkey Kong",
+        "HashTags": [],
+        "Mentions": []
     },
     {
         "Id": "03",
         "Name": "Link",
-        "Message": "",
-        "HashTags": []
+        "Message": "The hero of time, the waker of winds, a little bit wild, #Link!",
+        "HashTags": ["thelegendofzelda", "zelda", "triforce", "botw"],
+        "Mentions": []
     },
     {
         "Id": "04",
         "Name": "Samus",
-        "Message": "",
-        "HashTags": []
+        "Message": "The bounty hunter with a penchant for Metroid's, #Samus",
+        "HashTags": ["metroid", "metroidprime"],
+        "Mentions": []
     },
     {
         "Id": "04e",
         "Name": "Dark Samus",
-        "Message": "",
-        "HashTags": []
+        "Message": "The literal echo fighter",
+        "HashTags": ["metroid", "metroidprime", "metroidprime2echoes"],
+        "Mentions": []
     }
 ]

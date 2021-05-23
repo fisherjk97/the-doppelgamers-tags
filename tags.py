@@ -3,8 +3,8 @@
 # importing the module
 import json
 
-constant_hash_tags = ["#photomode", "doppelgamers", "virtualphotography" ]
-constant_mentions = ["@NintendoOfAmerica", "@Sora_Sakurai"]
+hash_tags = ["#photomode", "doppelgamers", "virtualphotography", "smashbros", "smashbrosultimate", "switchshare" ]
+mentions = ["@NintendoOfAmerica", "@Sora_Sakurai"]
 
 def read(file):
     # Opening JSON file
@@ -17,9 +17,6 @@ def read(file):
 
     return data
 
-
-        
-
 def generate_hash_tags(data):
     content = ""
     day_num = 1
@@ -31,11 +28,16 @@ def generate_hash_tags(data):
         if "HashTags" not in d:
             d["HashTags"] = []
 
-        d["HashTags"].extend(constant_hash_tags)
-        d["HashTags"].extend(constant_mentions)
+        if "Mentions" not in d:
+            d["Mentions"] = []
+
+        d["HashTags"].extend(hash_tags)
+        d["Mentions"].extend(mentions)
 
         content += "\n"
         content += print_hashtags(d["HashTags"])
+        content += "\n"
+        content += print_mentions(d["Mentions"])
         content += "\n"
         content += "\n"
         print(content)
@@ -48,10 +50,27 @@ def print_hashtags(hashtags):
     count = 0
     if(hashtags):
         for h in hashtags:
-            if count == 0:
-                content +=  h
+            if not h.startswith("#", 0, 1):
+                h = "#" + h
+            if count != 0:
+                content +=  " " + h
             else:
-                content += " " + h
+                content += h
+            count += 1
+    return content
+
+
+def print_mentions(mentions):
+    content = ""
+    count = 0
+    if(mentions):
+        for h in mentions:
+            if not h.startswith("@", 0, 1):
+                h = "@" + h
+            if count != 0:
+                content +=  " " + h
+            else:
+                content += h
             count += 1
     return content
 
