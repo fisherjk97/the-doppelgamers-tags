@@ -1,0 +1,32 @@
+[
+    {
+        "Id": "01",
+        "Name": "Mario",
+        "Message": "Let's start the countdown with everyone's favorite Italian plumber, #Mario!",
+        "HashTags": ["#supermario", "supermariobros", "mushroomkingdom"]
+    },
+    {
+        "Id": "02",
+        "Name": "Donkey Kong",
+        "Message": "",
+        "HashTags": ""
+    },
+    {
+        "Id": "03",
+        "Name": "Link",
+        "Message": "",
+        "HashTags": ""
+    },
+    {
+        "Id": "04",
+        "Name": "Samus",
+        "Message": "",
+        "HashTags": ""
+    },
+    {
+        "Id": "04e",
+        "Name": "Dark Samus",
+        "Message": "",
+        "HashTags": ""
+    }
+]
