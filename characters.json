@@ -11,7 +11,7 @@
         "Id": "02",
         "Name": "Donkey Kong",
         "Games": ["Donkey Kong Country"],
-        "Message": "Next up, {Name}!",
+        "Message": "Mario's original nemesis, {Name}!",
         "HashTags": [],
         "Mentions": []
     },
@@ -34,7 +34,7 @@
     {
         "Id": "04e",
         "Name": "Dark Samus",
-        "Games": ["Metroid", "Metroid Prime", "Super Metroid"],
+        "Games": ["Metroid", "Metroid Prime", "Metroid Prime Echoes", "Super Metroid"],
         "Message": "Next up, {Name}!",
         "HashTags": ["metroid", "metroidprime", "metroidprime2echoes"],
         "Mentions": []
@@ -43,7 +43,7 @@
         "Id": "05",
         "Name": "Yoshi",
         "Games": ["Super Mario Bros."],
-        "Message": "Next up, {Name}!",
+        "Message": "A plumber's best friend, {Name}!",
         "HashTags": ["#supermario", "#supermariobros"],
         "Mentions": []
     },
@@ -51,14 +51,14 @@
         "Id": "06",
         "Name": "Kirby",
         "Games": ["Kirby"],
-        "Message": "Next up, {Name}!",
+        "Message": "The sole survivor of Galeem's attack, {Name}!",
         "HashTags": [],
         "Mentions": []
     },
     {
         "Id": "07",
         "Name": "Fox",
-        "Games": ["Star Fox"],
+        "Games": ["Star Fox", "Star Fox 64"],
         "Message": "Next up, {Name}!",
         "HashTags": ["starfox"],
         "Mentions": []
@@ -67,7 +67,7 @@
         "Id": "08",
         "Name": "Pikachu",
         "Games": ["Pokemon"],
-        "Message": "Next up, {Name}!",
+        "Message": "He needs no introduction, {Name}!",
         "HashTags": ["pokemon"],
         "Mentions": []
     },

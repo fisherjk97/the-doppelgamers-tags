@@ -4,7 +4,7 @@
 import json
 from typing import Set
 
-hash_tags = ["#photomode", "doppelgamers", "virtualphotography", "smashbros", "smashbrosultimate", "switchshare" ]
+hash_tags = ["#photomode", "doppelgamers", "virtualphotography", "smashbros", "smashbrosultimate", "switchshare", "vpgamers", "gamergram", "vgpunite" ]
 mentions = ["@NintendoAmerica", "@Sora_Sakurai"]
 
 def read(file):
@@ -45,7 +45,7 @@ def generate_hash_tags(data):
 
 def format_games(games):
 
-    elements = ['#{0}'.format(element).replace(" ", "").replace(".", "").lower() for element in games]
+    elements = ['#{0}'.format(element).replace(" ", "").replace(".", "").replace("'","").lower() for element in games]
     return elements
 
 
