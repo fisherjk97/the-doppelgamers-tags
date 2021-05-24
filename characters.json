@@ -18,7 +18,7 @@
     {
         "Id": "03",
         "Name": "Link",
-        "Games": ["The Legend of Zelda"],
+        "Games": ["The Legend of Zelda", "Breath of the Wild"],
         "Message": "The hero of time, the waker of winds, a little bit wild, {Name}!",
         "HashTags": ["thelegendofzelda", "zelda", "triforce", "botw"],
         "Mentions": []
@@ -26,7 +26,7 @@
     {
         "Id": "04",
         "Name": "Samus",
-        "Games": ["Metroid"],
+        "Games": ["Metroid", "Metroid Prime", "Super Metroid"],
         "Message": "The bounty hunter with a penchant for Metroid's, {Name}!",
         "HashTags": ["metroid", "metroidprime"],
         "Mentions": []
@@ -34,7 +34,7 @@
     {
         "Id": "04e",
         "Name": "Dark Samus",
-        "Games": ["Metroid"],
+        "Games": ["Metroid", "Metroid Prime", "Super Metroid"],
         "Message": "Next up, {Name}!",
         "HashTags": ["metroid", "metroidprime", "metroidprime2echoes"],
         "Mentions": []
@@ -139,7 +139,7 @@
     {
         "Id": "16",
         "Name": "Sheik",
-        "Games": ["The Legend of Zelda"],
+        "Games": ["The Legend of Zelda", "Ocarina of Time"],
         "Message": "Next up, {Name}!",
         "HashTags": ["zelda"],
         "Mentions": []
@@ -147,9 +147,89 @@
     {
         "Id": "17",
         "Name": "Zelda",
-        "Games": ["The Legend of Zelda"],
+        "Games": ["The Legend of Zelda", "Breath of the Wild"],
         "Message": "Next up, {Name}!",
         "HashTags": ["princesszelda"],
+        "Mentions": []
+    },
+    {
+        "Id": "18",
+        "Name": "Dr. Mario",
+        "Games": ["Dr. Mario"],
+        "Message": "Next up, {Name}!",
+        "HashTags": ["mario"],
+        "Mentions": []
+    },
+    {
+        "Id": "19",
+        "Name": "Pichu",
+        "Games": ["Pokemon"],
+        "Message": "Next up, {Name}!",
+        "HashTags": [""],
+        "Mentions": []
+    },
+    {
+        "Id": "20",
+        "Name": "Falco",
+        "Games": ["Star Fox"],
+        "Message": "Next up, {Name}!",
+        "HashTags": [""],
+        "Mentions": []
+    },
+    {
+        "Id": "21",
+        "Name": "Marth",
+        "Games": ["Fire Emblem"],
+        "Message": "Next up, {Name}!",
+        "HashTags": [""],
+        "Mentions": []
+    },
+    {
+        "Id": "21e",
+        "Name": "Lucina",
+        "Games": ["Fire Emblem"],
+        "Message": "Next up, {Name}!",
+        "HashTags": [""],
+        "Mentions": []
+    },
+    {
+        "Id": "22",
+        "Name": "Young Link",
+        "Games": ["The Legend of Zelda", "Ocarina of Time", "Majora's Mask"],
+        "Message": "Next up, {Name}!",
+        "HashTags": [""],
+        "Mentions": []
+    },
+    {
+        "Id": "23",
+        "Name": "Ganondorf",
+        "Games": ["The Legend of Zelda", "Ocarina of Time"],
+        "Message": "Next up, {Name}!",
+        "HashTags": [""],
+        "Mentions": []
+    },
+    {
+        "Id": "24",
+        "Name": "Mewtwo",
+        "Games": ["Pokemon"],
+        "Message": "Next up, {Name}!",
+        "HashTags": [""],
+        "Mentions": []
+    },
+    {
+        "Id": "25",
+        "Name": "Roy",
+        "Games": ["Fire Emblem"],
+        "Message": "Next up, {Name}!",
+        "HashTags": [""],
+        "Mentions": []
+    },
+    {
+        "Id": "26",
+        "Name": "Mr. Game and Watch",
+        "Games": ["Game and Watch"],
+        "Message": "Next up, {Name}!",
+        "HashTags": [""],
         "Mentions": []
     }
 ]

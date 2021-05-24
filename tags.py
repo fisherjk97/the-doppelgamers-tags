@@ -2,6 +2,7 @@
   
 # importing the module
 import json
+from typing import Set
 
 hash_tags = ["#photomode", "doppelgamers", "virtualphotography", "smashbros", "smashbrosultimate", "switchshare" ]
 mentions = ["@NintendoAmerica", "@Sora_Sakurai"]
@@ -25,15 +26,11 @@ def generate_hash_tags(data):
         content += " " + d["Message"].replace("{Name}", d["Name"])
         day_num = day_num + 1
 
-        if "HashTags" not in d:
-            d["HashTags"] = []
+        d = update(d)
 
-        if "Mentions" not in d:
-            d["Mentions"] = []
+        data = to_set(d["HashTags"])
 
-        d["HashTags"].extend(format_games(d["Games"]))
-        d["HashTags"].extend(hash_tags)
-        d["Mentions"].extend(mentions)
+        print(data)
 
         content += "\n"
         content += print_hashtags(d["HashTags"])
@@ -41,7 +38,7 @@ def generate_hash_tags(data):
         content += print_mentions(d["Mentions"])
         content += "\n"
         content += "\n"
-        print(content)
+        #print(content)
 
     return content
 
@@ -51,6 +48,27 @@ def format_games(games):
     elements = ['#{0}'.format(element).replace(" ", "").replace(".", "").lower() for element in games]
     return elements
 
+
+def update(d):
+    if "HashTags" not in d:
+            d["HashTags"] = []
+
+    if "Mentions" not in d:
+        d["Mentions"] = []
+
+    d["HashTags"].extend(format_games(d["Games"]))
+    d["HashTags"].extend(hash_tags)
+    d["Mentions"].extend(mentions)
+
+    return d
+
+
+def to_set(hashtags):
+
+    result = set()
+    for h in hashtags:
+       result.add(h)
+    return result
 
 
 def print_hashtags(hashtags):
