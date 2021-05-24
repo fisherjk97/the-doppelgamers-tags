@@ -2,36 +2,154 @@
     {
         "Id": "01",
         "Name": "Mario",
-        "Message": "Let's start the countdown with everyone's favorite Italian plumber, #Mario!",
-        "HashTags": ["#supermario", "#supermariobros", "#mushroomkingdom"],
+        "Games": ["Super Mario Bros."],
+        "Message": "Let's start the countdown with everyone's favorite Italian plumber, {Name}!",
+        "HashTags": ["#supermario", "#supermariobros"],
         "Mentions": []
     },
     {
         "Id": "02",
         "Name": "Donkey Kong",
-        "Message": "The one and only, #Donkey Kong",
+        "Games": ["Donkey Kong Country"],
+        "Message": "Next up, {Name}!",
         "HashTags": [],
         "Mentions": []
     },
     {
         "Id": "03",
         "Name": "Link",
-        "Message": "The hero of time, the waker of winds, a little bit wild, #Link!",
+        "Games": ["The Legend of Zelda"],
+        "Message": "The hero of time, the waker of winds, a little bit wild, {Name}!",
         "HashTags": ["thelegendofzelda", "zelda", "triforce", "botw"],
         "Mentions": []
     },
     {
         "Id": "04",
         "Name": "Samus",
-        "Message": "The bounty hunter with a penchant for Metroid's, #Samus",
+        "Games": ["Metroid"],
+        "Message": "The bounty hunter with a penchant for Metroid's, {Name}!",
         "HashTags": ["metroid", "metroidprime"],
         "Mentions": []
     },
     {
         "Id": "04e",
         "Name": "Dark Samus",
-        "Message": "The literal echo fighter",
+        "Games": ["Metroid"],
+        "Message": "Next up, {Name}!",
         "HashTags": ["metroid", "metroidprime", "metroidprime2echoes"],
+        "Mentions": []
+    },
+    {
+        "Id": "05",
+        "Name": "Yoshi",
+        "Games": ["Super Mario Bros."],
+        "Message": "Next up, {Name}!",
+        "HashTags": ["#supermario", "#supermariobros"],
+        "Mentions": []
+    },
+    {
+        "Id": "06",
+        "Name": "Kirby",
+        "Games": ["Kirby"],
+        "Message": "Next up, {Name}!",
+        "HashTags": [],
+        "Mentions": []
+    },
+    {
+        "Id": "07",
+        "Name": "Fox",
+        "Games": ["Star Fox"],
+        "Message": "Next up, {Name}!",
+        "HashTags": ["starfox"],
+        "Mentions": []
+    },
+    {
+        "Id": "08",
+        "Name": "Pikachu",
+        "Games": ["Pokemon"],
+        "Message": "Next up, {Name}!",
+        "HashTags": ["pokemon"],
+        "Mentions": []
+    },
+    {
+        "Id": "09",
+        "Name": "Luigi",
+        "Games": ["Super Mario Bros."],
+        "Message": "Next up, {Name}!",
+        "HashTags": ["#supermario", "#supermariobros", "mario"],
+        "Mentions": []
+    },
+    {
+        "Id": "10",
+        "Name": "Ness",
+        "Games": ["Earthbound"],
+        "Message": "Next up, {Name}!",
+        "HashTags": ["Earthbound", "NES", "SNES"],
+        "Mentions": []
+    },
+    {
+        "Id": "11",
+        "Name": "Captain Falcon",
+        "Games": ["F Zero"],
+        "Message": "Next up, {Name}!",
+        "HashTags": ["fzero"],
+        "Mentions": []
+    },
+    {
+        "Id": "12",
+        "Name": "Jiggylypuff",
+        "Games": ["Pokemon"],
+        "Message": "Next up, {Name}!",
+        "HashTags": ["pokemon"],
+        "Mentions": []
+    },
+    {
+        "Id": "13",
+        "Name": "Peach",
+        "Games": ["Super Mario Bros."],
+        "Message": "Next up, {Name}!",
+        "HashTags": ["#supermario", "#supermariobros", "princesspeach"],
+        "Mentions": []
+    },
+    {
+        "Id": "13e",
+        "Name": "Daisy",
+        "Games": ["Super Mario Bros."],
+        "Message": "Next up, {Name}!",
+        "HashTags": ["#supermario", "#supermariobros", "princessdaisy"],
+        "Mentions": []
+    }
+    ,
+    {
+        "Id": "14",
+        "Name": "Bowser",
+        "Games": ["Super Mario Bros."],
+        "Message": "Next up, {Name}!",
+        "HashTags": ["#supermario", "#supermariobros", "kingkoopa"],
+        "Mentions": []
+    },
+    {
+        "Id": "15",
+        "Name": "Ice Climbers",
+        "Games": ["Ice Climbers"],
+        "Message": "Next up, {Name}!",
+        "HashTags": [],
+        "Mentions": []
+    },
+    {
+        "Id": "16",
+        "Name": "Sheik",
+        "Games": ["The Legend of Zelda"],
+        "Message": "Next up, {Name}!",
+        "HashTags": ["zelda"],
+        "Mentions": []
+    },
+    {
+        "Id": "17",
+        "Name": "Zelda",
+        "Games": ["The Legend of Zelda"],
+        "Message": "Next up, {Name}!",
+        "HashTags": ["princesszelda"],
         "Mentions": []
     }
 ]

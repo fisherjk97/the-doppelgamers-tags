@@ -4,7 +4,7 @@
 import json
 
 hash_tags = ["#photomode", "doppelgamers", "virtualphotography", "smashbros", "smashbrosultimate", "switchshare" ]
-mentions = ["@NintendoOfAmerica", "@Sora_Sakurai"]
+mentions = ["@NintendoAmerica", "@Sora_Sakurai"]
 
 def read(file):
     # Opening JSON file
@@ -22,7 +22,7 @@ def generate_hash_tags(data):
     day_num = 1
     for d in data:
         content += "Day " + str(day_num) + " of photographing every #SmashBros character."
-        content += " " + d["Message"]
+        content += " " + d["Message"].replace("{Name}", d["Name"])
         day_num = day_num + 1
 
         if "HashTags" not in d:
@@ -31,6 +31,7 @@ def generate_hash_tags(data):
         if "Mentions" not in d:
             d["Mentions"] = []
 
+        d["HashTags"].extend(format_games(d["Games"]))
         d["HashTags"].extend(hash_tags)
         d["Mentions"].extend(mentions)
 
@@ -43,6 +44,13 @@ def generate_hash_tags(data):
         print(content)
 
     return content
+
+
+def format_games(games):
+
+    elements = ['#{0}'.format(element).replace(" ", "").replace(".", "").lower() for element in games]
+    return elements
+
 
 
 def print_hashtags(hashtags):
