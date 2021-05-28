@@ -4,7 +4,7 @@
 import json
 from typing import Set
 
-hash_tags = ["#photomode", "doppelgamers", "virtualphotography", "smashbros", "smashbrosultimate", "switchshare", "vpgamers", "gamergram", "vgpunite" ]
+hash_tags = ["#photomode", "doppelgamers", "virtualphotography", "smashbros", "smashbrosultimate", "switchshare"]
 mentions = ["@NintendoAmerica", "@Sora_Sakurai"]
 
 def read(file):

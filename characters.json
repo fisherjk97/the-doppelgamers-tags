@@ -4,7 +4,7 @@
         "Name": "Mario",
         "Games": ["Super Mario Bros."],
         "Message": "Let's start the countdown with everyone's favorite Italian plumber, {Name}!",
-        "HashTags": ["#supermario", "#supermariobros"],
+        "HashTags": ["#supermario"],
         "Mentions": []
     },
     {
