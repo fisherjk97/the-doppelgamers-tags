@@ -23,7 +23,7 @@ def generate_hash_tags(data):
     day_num = 1
     for d in data:
         content += "Day " + str(day_num) + " of photographing every #SmashBros character."
-        content += " " + d["Message"].replace("{Name}", d["Name"])
+        content += " " + d["Message"].replace("{Name}", "#"+d["Name"])
         day_num = day_num + 1
 
         d = update(d)
