@@ -38,7 +38,7 @@ def generate_hash_tags(data):
         content += print_mentions(d["Mentions"])
         content += "\n"
         content += "\n"
-        #print(content)
+        print(content)
 
     return content
 
@@ -60,6 +60,11 @@ def update(d):
     d["HashTags"].extend(hash_tags)
     d["Mentions"].extend(mentions)
 
+
+    res = []
+    [res.append(x) for x in d["HashTags"] if x not in res]
+    d["HashTags"] = res
+
     return d
 
 
@@ -76,13 +81,14 @@ def print_hashtags(hashtags):
     count = 0
     if(hashtags):
         for h in hashtags:
-            if not h.startswith("#", 0, 1):
-                h = "#" + h
-            if count != 0:
-                content +=  " " + h
-            else:
-                content += h
-            count += 1
+            if h:
+                if not h.startswith("#", 0, 1):
+                        h = "#" + h
+                if count != 0:
+                    content +=  " " + h
+                else:
+                    content += h
+                count += 1
     return content
 
 
